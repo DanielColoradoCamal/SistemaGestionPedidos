@@ -1,6 +1,6 @@
 body {
   font-family: 'Lora';
-  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg_main.jpg");
+  background: #fbfbfb;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -20,7 +20,11 @@ p {
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.486);
+  color:rgba(255, 255, 255, 0.486);
+}
+
+.site-heading-lower{
+  color: #151E26;
 }
 
 .site-heading {
@@ -80,7 +84,8 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(24, 64, 8);
+  box-shadow: 2px 2px 5px #999;
+  background-color: #22577E;
   font-family: 'Raleway';
 }
 
@@ -123,6 +128,7 @@ p {
 
 .intro {
   position: relative;
+  
 }
 
 @media (min-width: 992px) {
@@ -134,7 +140,8 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: rgba(24, 64, 8);
+    background-color: #326898;
+    box-shadow: 2px 2px 5px #999;
     color: cornsilk;
     position: absolute;
   }
@@ -155,14 +162,14 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgb(242, 245, 240);
+  background-color: rgb(216, 229, 237);
 }
 
 .cta .cta-inner {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(24, 64, 8);
+  background-color: #326898;
   color: cornsilk;
 }
 
@@ -229,7 +236,7 @@ p {
 }
 
 .footer {
-   background-color: rgba(24, 64, 8, 0.8);
+   background-color: #151E26;
 }
 
 
