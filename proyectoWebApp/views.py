@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from servicios.models import Servicio
+from blog.models import Categoria,Post
 # Create your views here.
 
 def inicio(request):
@@ -13,7 +14,8 @@ def tienda(request):
     return render(request, 'proyectoWebApp/tienda.html')
 
 def blog(request):
-    return render(request, 'proyectoWebApp/blog.html')
+    posts = Post.objects.all()
+    return render(request, 'proyectoWebApp/blog.html', {'post':posts})
 
 def contacto(request):
     return render(request, 'proyectoWebApp/contacto.html')
