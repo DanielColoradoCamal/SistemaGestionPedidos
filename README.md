@@ -67,7 +67,7 @@ Vuelve a tu navegador e ingresa a la ruta  ``http://127.0.0.1:8000/admin`` entra
 
 
 
-> Nota: Este proyecto es elaborado como proyecto final curso de **CoderHouse** Python Camada: 19360
+> Nota: Este proyecto es elaborado como proyecto final del curso de **CoderHouse** Python Camada: 19360
 
 
 **Software libre, Disfruta!**

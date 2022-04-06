@@ -3,19 +3,28 @@
 {% load static %}
 
 {% block content %}
-<h1 class="text-center">Servicios</h1>
+<h1 class="text-uppercase text-expanded text-center font-weight-bold" style="padding-top:40px">Conoce nuestros servicios</h1>
 
 <br>
 <br>
 
     {% for servicio in servicios%}
 
-    <div class="Container text-center">
-        <h2>{{servicio.titulo}}</h2>
-        <p>{{servicio.contenido}}</p>
-        <p> <img src="{{servicio.imagen.url}}" alt="{{servicio.titulo}}" style="max-width:400px;width:400px;height:auto;" > </p>
-        <hr>
-    </div>
+    <section class="page-section clearfix">
+        <div class="container">
+          <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{servicio.imagen.url}}" alt="{{servicio.titulo}}">
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+              <h2 class="section-heading mb-4" >
+                <span class="section-heading-lower">{{servicio.titulo}}</span>
+              </h2>
+              <p class="mb-3">{{servicio.contenido}}</p>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
 
     {% endfor %}
 {% endblock %}
