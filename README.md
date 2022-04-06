@@ -59,7 +59,7 @@ Superuser created successfully.
 ```
 Corre nuevamente el servidor
 ```sh
-python3 manage.py createsuperuser
+python3 manage.py runserver
 ```
 
 Vuelve a tu navegador e ingresa a la ruta  ``http://127.0.0.1:8000/admin`` entra con las credenciales de **super usuario** que escogiste; verás el panel de administrador de Django.
