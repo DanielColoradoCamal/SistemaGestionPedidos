@@ -5,6 +5,8 @@
 [![Django](https://img.shields.io/badge/Django-3DDC8?style=for-the-badge&logo=Python&logoColor=white&labelColor=101010)]()
 [![Sqlite3](https://img.shields.io/badge/Sqlite3-1B7DC5?style=for-the-badge&logo=Sqlite&logoColor=white&labelColor=101010)]()
 [![Bootstrap](https://img.shields.io/badge/bootstrap-563d7c?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=101010)]()
+[![Html5](https://img.shields.io/badge/Html5-e34c26?style=for-the-badge&logo=Html5&logoColor=white&labelColor=101010)]()
+[![Css3](https://img.shields.io/badge/Css3-74bce9?style=for-the-badge&logo=Css3&logoColor=white&labelColor=101010)]()
 
 ## Creado por: 🧑🏽‍💻
 ##### Luis Daniel Colorado Camal
@@ -35,7 +37,8 @@ Listado de rutas disponibles.
 | Tienda | ``http://127.0.0.1:8000/tienda/`` |
 | Contacto | ``http://127.0.0.1:8000/contacto/`` |
 | Blog | ``http://127.0.0.1:8000/blog/`` |
-| Politica | ``http://127.0.0.1:8000/politica/`` |
+| filtrar categorias | ``http://127.0.0.1:8000/blog/categoria/<categoria_id>/`` |
+| Politica de privacidad | ``http://127.0.0.1:8000/politica/`` |
 | Legales | ``http://127.0.0.1:8000/legales/`` |
 | Cookies | ``http://127.0.0.1:8000/cookies/`` |
 | Admin | ``http://127.0.0.1:8000/admin/`` |
