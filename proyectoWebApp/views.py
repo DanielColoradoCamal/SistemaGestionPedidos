@@ -18,3 +18,12 @@ def tienda(request):
 def contacto(request):
     return render(request, 'proyectoWebApp/contacto.html')
 
+def politica(request):
+    return render(request, 'proyectoWebApp/politica.html')
+
+def cookies(request):
+    return render(request, 'proyectoWebApp/cookies.html')
+
+def legales(request):
+    return render(request, 'proyectoWebApp/legales.html')
+

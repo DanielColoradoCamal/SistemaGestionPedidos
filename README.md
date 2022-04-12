@@ -35,9 +35,13 @@ Listado de rutas disponibles.
 | Tienda | ``http://127.0.0.1:8000/tienda/`` |
 | Contacto | ``http://127.0.0.1:8000/contacto/`` |
 | Blog | ``http://127.0.0.1:8000/blog/`` |
+| Politica | ``http://127.0.0.1:8000/politica/`` |
+| Legales | ``http://127.0.0.1:8000/legales/`` |
+| Cookies | ``http://127.0.0.1:8000/cookies/`` |
 | Admin | ``http://127.0.0.1:8000/admin/`` |
 | Agregar Servicio | ``http://127.0.0.1:8000/admin/servicios/servicio/`` |
 | Modificar Servicio | ``http://127.0.0.1:8000/admin/servicios/servicio/{id}/change/`` |
+
 
 ## Modificar datos desde pantalla admin
 Crear un super usuario desde la carpeta raiz ``ProyectoWeb``si ya hiciste 
