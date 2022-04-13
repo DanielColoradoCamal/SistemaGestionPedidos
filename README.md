@@ -36,6 +36,8 @@ Listado de rutas disponibles.
 | Servicios | ``http://127.0.0.1:8000/servicios/`` |
 | Tienda | ``http://127.0.0.1:8000/tienda/`` |
 | Contacto | ``http://127.0.0.1:8000/contacto/`` |
+| form enviado con exito | ``http://127.0.0.1:8000/contacto/?valido`` |
+| form enviado sin exito | ``http://127.0.0.1:8000/contacto/?novalido`` |
 | Blog | ``http://127.0.0.1:8000/blog/`` |
 | filtrar categorias | ``http://127.0.0.1:8000/blog/categoria/<categoria_id>/`` |
 | Politica de privacidad | ``http://127.0.0.1:8000/politica/`` |
