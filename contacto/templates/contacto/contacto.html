@@ -3,7 +3,15 @@
 {% load static %}
 
 {% block content %}
-<h1>Contacto</h1>
+<h1 class="text-uppercase text-expanded text-center font-weight-bold" style="padding-top:40px">Contacto</h1>
+<div class="contenedorformulario text-center"> 
+    <form action="" method="post">
+        {% csrf_token %}
+        <table style="margin: 10px auto">{{contactoForm.as_table}}</table>
+        <input style="margin-bottom: 8px;" type="submit" value="Enviar">
 
-<p>{{contactoForm}}</p>
+    </form>
+
+</div>
+
 {% endblock %}
