@@ -5,7 +5,15 @@
 {% block content %}
 <h1 class="text-uppercase text-expanded text-center font-weight-bold" style="padding-top:40px">Contacto</h1>
 <div class="contenedorformulario text-center"> 
-    <form action="" method="post">
+
+    {% if 'valido' in request.GET %}
+
+        <p style="font-size:large; color:rgb(23, 100, 23);"><strong>Mensaje enviado con exito</strong></p>
+    {% elif 'novalido' in request.GET %}
+        <p style="font-size:large; color:rgb(149, 18, 18);"><strong>Error al enviar el mensaje</strong></p>
+    {% endif %}
+
+    <form action="" method="POST">
         {% csrf_token %}
         <table style="margin: 10px auto">{{contactoForm.as_table}}</table>
         <input style="margin-bottom: 8px;" type="submit" value="Enviar">
@@ -13,5 +21,6 @@
     </form>
 
 </div>
+
 
 {% endblock %}
