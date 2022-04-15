@@ -3,5 +3,31 @@
 {% load static %}
 
 {% block content %}
-<h1>Tienda</h1>
+<h1 class="text-uppercase text-expanded text-center font-weight-bold" style="padding-top:40px">Tienda</h1>
+
+<br>
+<br>
+<div class="container">
+    <div class="row">
+    
+        {% for producto in productos %}
+        <div class="col-md-4">
+            <div class="card" style="width:100%;margin-bottom: 30px ;">
+                <img class="card-img-top" style="width: auto; height:220px; padding: 10px;" src="{{producto.imagen.url}}" alt="">
+
+                <div class="card-body">
+                    <h4 class="cart-title" style="text-align: center;">{{producto.nombre}}</h4>
+                    <p class="cart-text">$ {{producto.precio}} M.N.</p>
+                
+                </div>
+                
+            </div>
+        </div>
+
+        {% endfor %}
+</div>
+
+</div>
+
+
 {% endblock %}

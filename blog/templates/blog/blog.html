@@ -12,17 +12,22 @@
 
         <section class="page-section clearfix">
             <div class="container">
-            <div class="intro">
-                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{post.imagen.url}}">
-                <div class="intro-text left-0 text-center bg-faded p-5 rounded" style="margin: 10px auto">
-                <h2 class="section-heading mb-4" >
-                    <span class="section-heading-lower">{{post.titulo}}</span>
+                <div class="intro">
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{post.imagen.url}}">
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded" style="margin: 10px auto">
+                        <h2 class="section-heading mb-4" >
+                            <span class="section-heading-lower">{{post.titulo}}</span>
+                            
+                        </h2>
+                        <p class="mb-3">{{post.contenido}}</p>
+                        <div>
+                            <p>Autor: {{post.autor}}</p>
+                            <p>{{post.updated}}</p>
+                        </div>
                     
-                </h2>
-                <p class="mb-3">{{post.contenido}}</p>
-                
+                    
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
     {% endfor %}
