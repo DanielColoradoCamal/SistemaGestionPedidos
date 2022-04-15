@@ -6,7 +6,7 @@ def tienda(request):
     productos = Producto.objects.all()
     return render(request, 'tienda/tienda.html', {'productos':productos})
 
-def categoriaProd(request, id):
-    categoriaProducto= CategoriaProducto.objects.get(id=id)
+def categoriaProd(request, categoria_id):
+    categoriaProducto= CategoriaProducto.objects.get(id=categoria_id)
     productos= Producto.objects.filter(categoriaProdcuto=categoriaProducto)
     return render(request,'tienda/categoriaProd.html', {'productos':productos, 'categoriaProducto': categoriaProducto})

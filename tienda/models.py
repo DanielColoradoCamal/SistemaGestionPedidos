@@ -23,7 +23,7 @@ class Producto(models.Model):
     imagen=models.ImageField(upload_to="tienda", null=True, blank=True)
     precio=models.FloatField()
     disponibilidad=models.BooleanField()
-    categorias=models.ForeignKey(CategoriaProducto, on_delete=models.CASCADE)
+    categoriasProd=models.ManyToManyField(CategoriaProducto)
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now_add=True)
 
