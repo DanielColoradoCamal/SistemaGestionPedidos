@@ -5,11 +5,19 @@
 {% block content %}
 <h1 class="text-uppercase text-expanded text-center font-weight-bold" style="padding-top:40px">Tienda</h1>
 
+
+
 <br>
 <br>
 <div class="container">
-    <div class="row">
+    <div style="float:right;">
+       <p> Total: $ {{importe_total_carro}} M.N.</p> 
+
+        {% include "carro/widget.html" %}
+    </div>
     
+    <div class="row">
+       
         {% for producto in productos %}
         <div class="col-md-4">
             <div class="card" style="width:100%;margin-bottom: 30px ;">
@@ -20,6 +28,10 @@
                     <p class="cart-text">$ {{producto.precio}} M.N.</p>
                 
                 </div>
+
+                <dic class="card-footer text-center">
+                    <a href="#" class="btn btn-success">Agregar al carrito</a>
+                </dic>
                 
             </div>
         </div>
