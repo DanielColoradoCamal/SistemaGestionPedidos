@@ -11,8 +11,6 @@
 <br>
 <div class="container">
     <div style="float:right;">
-       <p> Total: $ {{importe_total_carro}} M.N.</p> 
-
         {% include "carro/widget.html" %}
     </div>
     
@@ -24,13 +22,13 @@
                 <img class="card-img-top" style="width: auto; height:220px; padding: 10px;" src="{{producto.imagen.url}}" alt="">
 
                 <div class="card-body">
-                    <h4 class="cart-title" style="text-align: center;">{{producto.nombre}}</h4>
-                    <p class="cart-text">$ {{producto.precio}} M.N.</p>
+                    <h4 class="cart-title" style="text-align: center; font-size:large">{{producto.nombre}}</h4>
+                    <p class="cart-text" style="font-size:medium;"></p>$ {{producto.precio}} M.N.</p>
                 
                 </div>
 
                 <dic class="card-footer text-center">
-                    <a href="#" class="btn btn-success">Agregar al carrito</a>
+                    <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-success">Agregar al carrito</a>
                 </dic>
                 
             </div>

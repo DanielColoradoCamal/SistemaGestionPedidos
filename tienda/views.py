@@ -8,5 +8,5 @@ def tienda(request):
 
 def categoriaProd(request, categoria_id):
     categoriaProducto= CategoriaProducto.objects.get(id=categoria_id)
-    productos= Producto.objects.filter(categoriaProdcuto=categoriaProducto)
+    productos= Producto.objects.filter(categoriaProducto=categoriaProducto)
     return render(request,'tienda/categoriaProd.html', {'productos':productos, 'categoriaProducto': categoriaProducto})
