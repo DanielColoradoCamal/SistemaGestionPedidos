@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'tienda',
     'carro',
     'autenticacion',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -132,6 +133,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATES_PACK = 'bootstrap4'
 
 #Configuacion de email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

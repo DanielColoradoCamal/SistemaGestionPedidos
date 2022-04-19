@@ -25,6 +25,17 @@ su navegador preferido.
 ```sh
 127.0.0.1:8000
 ```
+## Usuario de prueba
+> Nota: Puedes usar el usuario de prueba o crear uno propio.
+
+<br>
+
+| Usuario | Contraseña |
+| ------ | ------ |
+| usuarioPrueba1 | verificacion123 |
+
+
+
 
 ## Rutas 
 
@@ -40,6 +51,7 @@ Listado de rutas disponibles.
 | form enviado sin exito | ``http://127.0.0.1:8000/contacto/?novalido`` |
 | Blog | ``http://127.0.0.1:8000/blog/`` |
 | filtrar categorias | ``http://127.0.0.1:8000/blog/categoria/<categoria_id>/`` |
+| Registrarse | ``http://127.0.0.1:8000/autenticacion/`` |
 | Politica de privacidad | ``http://127.0.0.1:8000/politica/`` |
 | Legales | ``http://127.0.0.1:8000/legales/`` |
 | Cookies | ``http://127.0.0.1:8000/cookies/`` |
