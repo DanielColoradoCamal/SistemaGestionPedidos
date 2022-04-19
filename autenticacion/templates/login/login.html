@@ -1,0 +1,23 @@
+{% extends "proyectoWebApp/padre.html" %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1 class="text-uppercase text-expanded text-center font-weight-bold" style="padding-top:40px">Acceder</h1>
+<div class="contenedorformulario text-center"> 
+ 
+    <form action="" method="POST">
+        {% csrf_token %}
+       
+        {{form|crispy}}
+        <table style="margin: 10px auto">{{contactoForm.as_table}}</table>
+        <input class="btn btn-success" style="margin-bottom: 8px;" type="submit" value="Iniciar sesión">
+
+
+    </form>
+
+</div>
+
+
+{% endblock %}
