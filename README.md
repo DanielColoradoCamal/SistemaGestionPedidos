@@ -32,7 +32,7 @@ su navegador preferido.
 
 | Usuario | Contraseña |
 | ------ | ------ |
-| usuarioPrueba1 | verificacion123 |
+| usuarioPrueba | verificacion123 |
 
 
 
@@ -47,17 +47,19 @@ Listado de rutas disponibles.
 | Servicios | ``http://127.0.0.1:8000/servicios/`` |
 | Tienda | ``http://127.0.0.1:8000/tienda/`` |
 | Contacto | ``http://127.0.0.1:8000/contacto/`` |
-| form enviado con exito | ``http://127.0.0.1:8000/contacto/?valido`` |
-| form enviado sin exito | ``http://127.0.0.1:8000/contacto/?novalido`` |
+| Form enviado con exito | ``http://127.0.0.1:8000/contacto/?valido`` |
+| Form enviado sin exito | ``http://127.0.0.1:8000/contacto/?novalido`` |
 | Blog | ``http://127.0.0.1:8000/blog/`` |
-| filtrar categorias | ``http://127.0.0.1:8000/blog/categoria/<categoria_id>/`` |
+| Post | ``http://127.0.0.1:8000/blog/post/<int:id>`` |
+| Filtrar categorias | ``http://127.0.0.1:8000/blog/categoria/<int:categoria_id>/`` |
 | Registrarse | ``http://127.0.0.1:8000/autenticacion/`` |
+| Iniciar sesión | ``http://127.0.0.1:8000/autenticacion/loguear`` |
+| Cerrar sesión | ``http://127.0.0.1:8000/autenticacion/cerrar_sesion`` |
 | Politica de privacidad | ``http://127.0.0.1:8000/politica/`` |
 | Legales | ``http://127.0.0.1:8000/legales/`` |
 | Cookies | ``http://127.0.0.1:8000/cookies/`` |
 | Admin | ``http://127.0.0.1:8000/admin/`` |
-| Agregar Servicio | ``http://127.0.0.1:8000/admin/servicios/servicio/`` |
-| Modificar Servicio | ``http://127.0.0.1:8000/admin/servicios/servicio/{id}/change/`` |
+
 
 
 ## Modificar datos desde pantalla admin
