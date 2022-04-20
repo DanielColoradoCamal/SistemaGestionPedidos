@@ -14,26 +14,29 @@
 </thead>
 
 <tbody>
-    {% if request.session.carro.items %}
 
-        {% for key, value in request.session.carro.items %}
+    {% if user.is_authenticated%}
 
-            <tr class="text-center">
-                <th>{{value.nombre}}</th>
-                <th>{{value.cantidad}}</th>
-                <th>
-                    <a href="{% url 'carro:agregar' value.producto_id %} " class="btn btn-sm btn-success">+</a>
+        {% if request.session.carro.items %}
 
-                    <a href=" {% url 'carro:restar' value.producto_id %} " class="btn btn-sm  btn-danger">-</a>
-                    <br>
-                    <span style="float:left">$</span> &nbsp &nbsp
-                    <span style="float:right">{{value.precio}}</span>
+            {% for key, value in request.session.carro.items %}
 
-                </th>
-            </tr>
+                <tr class="text-center">
+                    <th>{{value.nombre}}</th>
+                    <th>{{value.cantidad}}</th>
+                    <th>
+                        <a href="{% url 'carro:agregar' value.producto_id %} " class="btn btn-sm btn-success">+</a>
 
-        {% endfor %}
-    {% else %}
+                        <a href=" {% url 'carro:restar' value.producto_id %} " class="btn btn-sm  btn-danger">-</a>
+                        <br>
+                        <span style="float:left">$</span> &nbsp &nbsp
+                        <span style="float:right">{{value.precio}}</span>
+
+                    </th>
+                </tr>
+
+            {% endfor %}
+        {% else %}
 
         <tr>
 
@@ -42,6 +45,10 @@
              {{value.precio}}
     
         </tr>
+        {% endif%}
+
+        {% else %}
+            <p style="background-color:cadetblue; text-align:center; font-size: large;">Inicia sesion para comprar</p>
     {% endif %}
 </tbody>
 
