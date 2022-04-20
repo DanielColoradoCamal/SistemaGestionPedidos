@@ -1,3 +1,4 @@
+from xml.etree.ElementInclude import default_loader
 from django.db import models
 
 
@@ -6,7 +7,7 @@ from django.db import models
 class CategoriaProducto(models.Model):
     nombre=models.CharField(max_length=50)
     created=models.DateTimeField(auto_now_add=True)
-    updated=models.DateTimeField(auto_now_add=True)
+    updated=models.DateTimeField(auto_now=True)
     
 
     class Meta:
@@ -19,13 +20,13 @@ class CategoriaProducto(models.Model):
 class Producto(models.Model):
     nombre=models.CharField(max_length=50)
     marca=models.CharField(max_length=50)
-    descripcion=models.CharField(max_length=250)
-    imagen=models.ImageField(upload_to="tienda", null=True, blank=True)
+    descripcion=models.CharField(max_length=250, blank=True)
+    imagen=models.ImageField(upload_to="tienda")
     precio=models.FloatField()
     disponibilidad=models.BooleanField()
     categoriasProd=models.ManyToManyField(CategoriaProducto)
     created=models.DateTimeField(auto_now_add=True)
-    updated=models.DateTimeField(auto_now_add=True)
+    updated=models.DateTimeField(auto_now=True)
 
 
     class Meta:

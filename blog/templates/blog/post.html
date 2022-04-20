@@ -1,0 +1,40 @@
+{% extends "proyectoWebApp/padre.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="text-uppercase text-expanded text-center font-weight-bold" style="padding-top:40px">{{posts.titulo}}</h1>
+
+<br>
+<br>
+
+
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{posts.imagen.url}}">
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded" style="margin: 10px auto">
+                        <h2 class="section-heading mb-4" >
+                            
+                            
+                        </h2>
+                        <p class="mb-3">{{posts.contenido}}</p>
+                        <div>
+                            <p>Autor: {{posts.autor}}</p>
+                            <p>{{posts.updated}}</p>
+                        </div>
+                    
+                    
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+    <section>
+        <div style="width: 75%; margin: auto; text-align: center; color: #151E26; padding-bottom: 20px;">
+       
+                <a href="{% url 'Blog' %}">Volver</a>
+           
+        </div>
+    </section>
+{% endblock %}
