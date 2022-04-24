@@ -11,6 +11,10 @@
 ## Creado por: 🧑🏽‍💻
 ##### Luis Daniel Colorado Camal
 
+## Video de uso
+
+[Video de Prueba](https://drive.google.com/drive/folders/1XthRGdLeFcvWetXFrU7y2FrpvXxx5ZxF?usp=sharing)
+
 
 ## Como inicializar el proyecto
 
